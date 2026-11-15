@@ -1,0 +1,9 @@
+budget  lambda | rule: hours  quality viewings |   same quality: hours saved [95% CI] |  same hours: quality gained [95% CI] |  vs tuned fixed K: V          hours
+     6  0.0662 |        6.07    8.879     4.65 |       2.93 h [2.21, 3.66]           |     +0.171 [+0.130, +0.215]         |       +0.160 ± 0.021   -0.41 ± 0.14
+     9  0.0321 |        8.98    9.015     6.67 |       6.56 h [3.91, 8.75]           |     +0.131 [+0.095, +0.167]         |       +0.122 ± 0.019   -0.42 ± 0.21
+    15  0.0116 |       14.54    9.124    10.36 |      11.82 h [7.77, 16.41]           |     +0.122 [+0.089, +0.154]         |       +0.118 ± 0.015   -3.78 ± 0.34
+
+rule minus alternative (paired, mean ± s.e.):
+  budget  6 h | 5 best-looking: quality +0.189 ± 0.027, hours -0.75 ± 0.14 | no cross-listing learning: quality +0.028 ± 0.017, hours -0.87 ± 0.11
+  budget  9 h | 5 best-looking: quality +0.325 ± 0.028, hours +2.17 ± 0.21 | no cross-listing learning: quality +0.037 ± 0.016, hours -1.27 ± 0.14
+  budget 15 h | 5 best-looking: quality +0.434 ± 0.030, hours +7.72 ± 0.33 | no cross-listing learning: quality +0.028 ± 0.012, hours -2.67 ± 0.21

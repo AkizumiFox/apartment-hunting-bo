@@ -1,0 +1,35 @@
+
+== E4: prior misspecification (main method) ==
+case                                          visits ref visits    visits - ref   V - V(ref model)   V - best fixed K
+well specified                                  6.67       6.67    +0.00 ± 0.00     +0.000 ± 0.000     +0.122 ± 0.019
+listings look 1 pt better than reality         10.33       6.67    +3.66 ± 0.11     -0.091 ± 0.018     +0.057 ± 0.023
+listings look 1 pt worse than reality           4.39       6.67    -2.29 ± 0.09     -0.073 ± 0.020     +0.074 ± 0.020
+glamorous listings disappoint (shrink 0.3)      8.24       7.99    +0.25 ± 0.05     -0.010 ± 0.013     +0.128 ± 0.019
+glamorous listings disappoint (shrink 0.6)      9.85       9.61    +0.24 ± 0.10     -0.046 ± 0.018     +0.161 ± 0.020
+surprises 1.5x larger than believed             4.72      10.15    -5.43 ± 0.16     -0.267 ± 0.036     -0.046 ± 0.034
+surprises 1.5x smaller than believed            9.07       3.99    +5.09 ± 0.13     -0.149 ± 0.016     -0.059 ± 0.018
+length scale believed 0.5 km (true 1.5)         6.79       6.67    +0.11 ± 0.03     -0.000 ± 0.007     +0.121 ± 0.017
+length scale believed 4.5 km (true 1.5)         6.06       6.67    -0.61 ± 0.06     -0.021 ± 0.014     +0.116 ± 0.015
+rating noise believed 0.2 (true 0.4)            6.51       6.67    -0.16 ± 0.03     +0.002 ± 0.009     +0.120 ± 0.017
+rating noise believed 0.8 (true 0.4)            6.75       6.67    +0.07 ± 0.02     -0.001 ± 0.007     +0.124 ± 0.017
+
+== E5: role of cross-listing correlation (same marginal variances) ==
+world correlated   model correlated (GP)  V=8.726 ± 0.045 visits=6.67 hours=8.98
+world correlated   model independent      V=8.648 ± 0.045 visits=7.71 hours=10.25
+  GP model - independent model | world correlated: V +0.078 ± 0.017, visits -1.04 ± 0.10
+world independent  model correlated (GP)  V=8.870 ± 0.043 visits=6.32 hours=8.50
+world independent  model independent      V=8.933 ± 0.042 visits=6.53 hours=8.63
+  GP model - independent model | world independent: V -0.063 ± 0.021, visits -0.21 ± 0.08
+
+== E7 (STRESS TEST, not a main result): 5 far listings cost ~10x and are far less certain ==
+lambda=0.02: ei: V=9.410 h=28.0  eipc:kg: V=9.418 h=22.0  pbgi:kg: V=9.427 h=21.9
+   pbgi - ei        +0.017 ± 0.020
+   pbgi - eipc:kg   +0.008 ± 0.010
+lambda=0.1: ei: V=7.870 h=18.6  eipc:kg: V=8.637 h=5.6  pbgi:kg: V=8.658 h=5.8
+   pbgi - ei        +0.788 ± 0.057
+   pbgi - eipc:kg   +0.020 ± 0.018
+
+== E8 (sensitivity): visited listings get taken with probability q per further visit ==
+q=0.00: cost-aware stop V=8.726; best fixed K=7 V=8.604; difference +0.122 ± 0.019
+q=0.05: cost-aware stop V=8.671; best fixed K=6 V=8.435; difference +0.236 ± 0.027
+q=0.15: cost-aware stop V=8.529; best fixed K=5 V=8.160; difference +0.369 ± 0.038

@@ -1,0 +1,93 @@
+
+== E1: selection x stopping, budget 6 h (lambda=0.0662) ==
+ei + cost-aware stop                             8.462 ± 0.048     4.90    6.80
+ei + fixed K=5 (tuned on other users)            8.260 ± 0.047     5.00    7.08
+pbgi:kg + cost-aware stop                        8.477 ± 0.047     4.65    6.07
+pbgi:kg + fixed K=5 (tuned on other users)       8.317 ± 0.047     5.00    6.48
+  stop effect | EI selection                         +0.201 ± 0.023
+  stop effect | PBGI selection                       +0.160 ± 0.021
+  selection effect (PBGI - EI) | cost-aware stop     +0.015 ± 0.013
+  selection effect (PBGI - EI) | fixed K             +0.057 ± 0.021
+
+== E1: selection x stopping, budget 9 h (lambda=0.0321) ==
+ei + cost-aware stop                             8.700 ± 0.045     7.01    9.91
+ei + fixed K=7 (tuned on other users)            8.553 ± 0.045     7.00   10.06
+pbgi:kg + cost-aware stop                        8.726 ± 0.045     6.67    8.98
+pbgi:kg + fixed K=7 (tuned on other users)       8.604 ± 0.044     7.00    9.41
+  stop effect | EI selection                         +0.147 ± 0.020
+  stop effect | PBGI selection                       +0.122 ± 0.019
+  selection effect (PBGI - EI) | cost-aware stop     +0.026 ± 0.011
+  selection effect (PBGI - EI) | fixed K             +0.051 ± 0.014
+
+== E1: selection x stopping, budget 15 h (lambda=0.0116) ==
+ei + cost-aware stop                             8.947 ± 0.042    10.82   15.72
+ei + fixed K=13 (tuned on other users)           8.832 ± 0.042    13.00   19.26
+pbgi:kg + cost-aware stop                        8.954 ± 0.042    10.36   14.54
+pbgi:kg + fixed K=13 (tuned on other users)      8.836 ± 0.042    13.00   18.32
+  stop effect | EI selection                         +0.115 ± 0.015
+  stop effect | PBGI selection                       +0.118 ± 0.015
+  selection effect (PBGI - EI) | cost-aware stop     +0.007 ± 0.007
+  selection effect (PBGI - EI) | fixed K             +0.004 ± 0.010
+
+== E2: reference points ==
+PBGI + hindsight (per-trial upper bound)         9.050 ± 0.039     4.89    6.63
+PBGI + cost-aware stop (min visits 1)            8.726 ± 0.045     6.67    8.98
+PBGI + cost-aware stop (min visits 2)            8.727 ± 0.045     6.74    9.07
+PBGI + cost-aware stop (min visits 3)            8.722 ± 0.045     6.92    9.32
+PBGI + best fixed K=7 in hindsight (one K for all)     8.604 ± 0.044     7.00    9.41
+PBGI + immediate (1 visit)                       7.474 ± 0.060     1.00    1.24
+listing-rating order, fixed 3                    8.266 ± 0.050     3.00    4.02
+listing-rating order, fixed 5                    8.470 ± 0.048     5.00    6.82
+listing-rating order, fixed 8 (best K)           8.520 ± 0.045     8.00   11.14
+random order, fixed 3                            6.288 ± 0.048     3.00    4.90
+random order, fixed 5                            6.800 ± 0.046     5.00    8.18
+random order, fixed 16 (best K)                  7.346 ± 0.041    16.00   26.24
+  [main] - [PBGI + hindsight (per-trial upper bound)]                                             -0.324 ± 0.016
+  [main] - [PBGI + cost-aware stop (min visits 2)]                                                -0.001 ± 0.003
+  [main] - [PBGI + cost-aware stop (min visits 3)]                                                +0.004 ± 0.004
+  [main] - [PBGI + best fixed K=7 in hindsight (one K for all)]                                   +0.122 ± 0.019
+  [main] - [PBGI + immediate (1 visit)]                                                           +1.252 ± 0.052
+  [main] - [listing-rating order, fixed 3]                                                        +0.460 ± 0.035
+  [main] - [listing-rating order, fixed 5]                                                        +0.256 ± 0.028
+  [main] - [listing-rating order, fixed 8 (best K)]                                               +0.205 ± 0.023
+  [main] - [random order, fixed 3]                                                                +2.438 ± 0.061
+  [main] - [random order, fixed 5]                                                                +1.926 ± 0.057
+  [main] - [random order, fixed 16 (best K)]                                                      +1.379 ± 0.046
+
+== E3: rating noise, original index (s = sigma) vs noise-adjusted (s = sigma~) ==
+noise sd | visits lat  visits kg |    V lat     V kg |     V kg - V lat |  gap to hindsight lat / kg | kg stop - best fixed K
+     0.0 |       6.88       6.88 |    8.908    8.908 |   +0.000 ± 0.000 |        0.213 / 0.213 |   +0.137 ± 0.015 (K=8)
+     0.3 |       7.18       6.88 |    8.862    8.864 |   +0.002 ± 0.005 |        0.246 / 0.244 |   +0.128 ± 0.015 (K=8)
+     0.7 |       8.03       6.67 |    8.714    8.726 |   +0.012 ± 0.012 |        0.337 / 0.324 |   +0.122 ± 0.019 (K=7)
+     1.0 |       9.24       6.26 |    8.491    8.543 |   +0.052 ± 0.018 |        0.467 / 0.411 |   +0.117 ± 0.018 (K=8)
+     1.4 |      10.87       5.69 |    8.220    8.338 |   +0.118 ± 0.025 |        0.608 / 0.494 |   +0.109 ± 0.024 (K=7)
+
+== E1: selection x stopping, budget 6 h (lambda=0.0662) ==
+ei + cost-aware stop                             8.196 ± 0.043     4.95    6.57
+ei + fixed K=5 (tuned on other users)            8.002 ± 0.044     5.00    6.63
+pbgi:kg + cost-aware stop                        8.211 ± 0.042     4.81    6.18
+pbgi:kg + fixed K=5 (tuned on other users)       8.050 ± 0.044     5.00    6.37
+  stop effect | EI selection                         +0.193 ± 0.024
+  stop effect | PBGI selection                       +0.161 ± 0.023
+  selection effect (PBGI - EI) | cost-aware stop     +0.016 ± 0.011
+  selection effect (PBGI - EI) | fixed K             +0.048 ± 0.016
+
+== E1: selection x stopping, budget 9 h (lambda=0.0321) ==
+ei + cost-aware stop                             8.456 ± 0.041     7.21    9.76
+ei + fixed K=7 (tuned on other users)            8.321 ± 0.042     7.00    9.39
+pbgi:kg + cost-aware stop                        8.461 ± 0.041     7.04    9.32
+pbgi:kg + fixed K=7 (tuned on other users)       8.324 ± 0.042     7.00    9.10
+  stop effect | EI selection                         +0.135 ± 0.022
+  stop effect | PBGI selection                       +0.137 ± 0.021
+  selection effect (PBGI - EI) | cost-aware stop     +0.004 ± 0.008
+  selection effect (PBGI - EI) | fixed K             +0.003 ± 0.016
+
+== E1: selection x stopping, budget 15 h (lambda=0.0116) ==
+ei + cost-aware stop                             8.724 ± 0.038    11.41   15.76
+ei + fixed K=13 (tuned on other users)           8.619 ± 0.039    13.00   17.96
+pbgi:kg + cost-aware stop                        8.725 ± 0.038    11.15   15.18
+pbgi:kg + fixed K=13 (tuned on other users)      8.653 ± 0.038    13.00   17.60
+  stop effect | EI selection                         +0.105 ± 0.016
+  stop effect | PBGI selection                       +0.072 ± 0.015
+  selection effect (PBGI - EI) | cost-aware stop     +0.002 ± 0.003
+  selection effect (PBGI - EI) | fixed K             +0.035 ± 0.009

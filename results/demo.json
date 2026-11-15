@@ -1,0 +1,32 @@
+{
+  "user": 3,
+  "tau": 6,
+  "shown_viewing": 5,
+  "n_reestimated": 7,
+  "order": [
+    18,
+    14,
+    2,
+    13,
+    31,
+    23
+  ],
+  "districts": [
+    "Da'an",
+    "Wenshan",
+    "Beitou",
+    "Zhongshan",
+    "Da'an",
+    "Da'an"
+  ],
+  "ratings": [
+    8.28,
+    7.21,
+    5.26,
+    6.41,
+    9.21,
+    3.6
+  ],
+  "hours": 8.709151954876711,
+  "signed": 31
+}

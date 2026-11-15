@@ -1,0 +1,250 @@
+{
+  "ell=0.5 km": {
+    "visits_index": [
+      4.51,
+      0.1437494687796657
+    ],
+    "visits_q1": [
+      4.455,
+      0.14381984518721394
+    ],
+    "visits_q2": [
+      4.49,
+      0.14401075565512772
+    ],
+    "frac_q1_continue_at_index_stop": 0.005,
+    "frac_q2_continue_at_index_stop": 0.0125,
+    "mean_q2_value_at_index_stop_when_continue": 0.004187342189885435,
+    "frac_points_q1_would_stop_earlier": 0.019943019943019943,
+    "frac_points_q2_would_stop_earlier": 0.01566951566951567,
+    "V_q1_minus_index": [
+      -0.008500860266800392,
+      0.007981503440882106
+    ],
+    "V_q2_minus_index": [
+      -0.003877915171565902,
+      0.00857528522778048
+    ],
+    "V_q2_minus_q1": [
+      0.004622945095234489,
+      0.006818719398066787
+    ]
+  },
+  "ell=1.5 km (default)": {
+    "visits_index": [
+      4.525,
+      0.14313334827520516
+    ],
+    "visits_q1": [
+      4.4425,
+      0.1423196105738233
+    ],
+    "visits_q2": [
+      4.47,
+      0.14304336233734136
+    ],
+    "frac_q1_continue_at_index_stop": 0.017543859649122806,
+    "frac_q2_continue_at_index_stop": 0.02756892230576441,
+    "mean_q2_value_at_index_stop_when_continue": 0.0037118238320304124,
+    "frac_points_q1_would_stop_earlier": 0.029787234042553193,
+    "frac_points_q2_would_stop_earlier": 0.024113475177304965,
+    "V_q1_minus_index": [
+      0.002517541246403332,
+      0.005034189740108097
+    ],
+    "V_q2_minus_index": [
+      0.0023170378401831137,
+      0.005170989386633226
+    ],
+    "V_q2_minus_q1": [
+      -0.00020050340622021823,
+      0.0055942165215924385
+    ]
+  },
+  "ell=4 km": {
+    "visits_index": [
+      4.51,
+      0.1326886041231891
+    ],
+    "visits_q1": [
+      4.3475,
+      0.13199589640086037
+    ],
+    "visits_q2": [
+      4.425,
+      0.13306089020164089
+    ],
+    "frac_q1_continue_at_index_stop": 0.0125,
+    "frac_q2_continue_at_index_stop": 0.0275,
+    "mean_q2_value_at_index_stop_when_continue": 0.005013017948327364,
+    "frac_points_q1_would_stop_earlier": 0.0292022792022792,
+    "frac_points_q2_would_stop_earlier": 0.020655270655270654,
+    "V_q1_minus_index": [
+      -0.0012078244996028208,
+      0.007123292933709484
+    ],
+    "V_q2_minus_index": [
+      -0.0009386369309123088,
+      0.006113853712977741
+    ],
+    "V_q2_minus_q1": [
+      0.0002691875686905121,
+      0.0068257092017473976
+    ]
+  },
+  "ell=10 km": {
+    "visits_index": [
+      4.4525,
+      0.12946529469834114
+    ],
+    "visits_q1": [
+      4.2425,
+      0.12673550843289486
+    ],
+    "visits_q2": [
+      4.3125,
+      0.12704313941800618
+    ],
+    "frac_q1_continue_at_index_stop": 0.0025,
+    "frac_q2_continue_at_index_stop": 0.005,
+    "mean_q2_value_at_index_stop_when_continue": 0.0019116565614800685,
+    "frac_points_q1_would_stop_earlier": 0.04344677769732078,
+    "frac_points_q2_would_stop_earlier": 0.03403330919623461,
+    "V_q1_minus_index": [
+      0.0010823186051932198,
+      0.008352114402641471
+    ],
+    "V_q2_minus_index": [
+      0.005222223629328799,
+      0.005142501197168534
+    ],
+    "V_q2_minus_q1": [
+      0.004139905024135579,
+      0.006796255327662851
+    ]
+  },
+  "strong: s_sp=1.2, s_idio=0.4, ell=4": {
+    "visits_index": [
+      3.4075,
+      0.08723608606407929
+    ],
+    "visits_q1": [
+      3.1275,
+      0.08886987121643118
+    ],
+    "visits_q2": [
+      3.27,
+      0.09422018684455342
+    ],
+    "frac_q1_continue_at_index_stop": 0.0575,
+    "frac_q2_continue_at_index_stop": 0.0725,
+    "mean_q2_value_at_index_stop_when_continue": 0.02068393589463282,
+    "frac_points_q1_would_stop_earlier": 0.12461059190031153,
+    "frac_points_q2_would_stop_earlier": 0.10176531671858775,
+    "V_q1_minus_index": [
+      0.009200156948265712,
+      0.011131605933458199
+    ],
+    "V_q2_minus_index": [
+      0.019566303087166007,
+      0.006452570053281069
+    ],
+    "V_q2_minus_q1": [
+      0.010366146138900294,
+      0.009931604216510778
+    ]
+  },
+  "no correlation": {
+    "visits_index": [
+      4.5175,
+      0.14487652464593329
+    ],
+    "visits_q1": [
+      4.5,
+      0.14265650070355174
+    ],
+    "visits_q2": [
+      4.5125,
+      0.1443579142045344
+    ],
+    "frac_q1_continue_at_index_stop": 0.0,
+    "frac_q2_continue_at_index_stop": 0.002506265664160401,
+    "mean_q2_value_at_index_stop_when_continue": 2.2781803621363395e-05,
+    "frac_points_q1_would_stop_earlier": 0.0,
+    "frac_points_q2_would_stop_earlier": 0.0,
+    "V_q1_minus_index": [
+      -0.007011394769054655,
+      0.00498447330358345
+    ],
+    "V_q2_minus_index": [
+      -0.0029645924414464053,
+      0.004701911702024478
+    ],
+    "V_q2_minus_q1": [
+      0.00404680232760825,
+      0.0026734950719018067
+    ]
+  },
+  "default, no rating noise": {
+    "visits_index": [
+      4.815,
+      0.15467465248159037
+    ],
+    "visits_q1": [
+      4.7975,
+      0.15374598839439169
+    ],
+    "visits_q2": [
+      4.87,
+      0.15465297882565704
+    ],
+    "frac_q1_continue_at_index_stop": 0.0,
+    "frac_q2_continue_at_index_stop": 0.03,
+    "mean_q2_value_at_index_stop_when_continue": 0.0021625717694229163,
+    "frac_points_q1_would_stop_earlier": 0.0,
+    "frac_points_q2_would_stop_earlier": 0.0,
+    "V_q1_minus_index": [
+      -0.0030952418228168787,
+      0.0029639103372044668
+    ],
+    "V_q2_minus_index": [
+      -0.00839197419224442,
+      0.004889999713327277
+    ],
+    "V_q2_minus_q1": [
+      -0.005296732369427542,
+      0.004130342178041115
+    ]
+  },
+  "default, N=24": {
+    "visits_index": [
+      5.2875,
+      0.17928319926542785
+    ],
+    "visits_q1": [
+      5.16,
+      0.17854465964772456
+    ],
+    "visits_q2": [
+      5.28,
+      0.18251652172270427
+    ],
+    "frac_q1_continue_at_index_stop": 0.0225,
+    "frac_q2_continue_at_index_stop": 0.0475,
+    "mean_q2_value_at_index_stop_when_continue": 0.00335957225361754,
+    "frac_points_q1_would_stop_earlier": 0.01924198250728863,
+    "frac_points_q2_would_stop_earlier": 0.016909620991253645,
+    "V_q1_minus_index": [
+      -0.0018952262357341376,
+      0.005351187250495161
+    ],
+    "V_q2_minus_index": [
+      0.004224525793860048,
+      0.005530884607559683
+    ],
+    "V_q2_minus_q1": [
+      0.006119752029594186,
+      0.006504928179507078
+    ]
+  }
+}
